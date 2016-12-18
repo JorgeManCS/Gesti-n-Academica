@@ -1,0 +1,80 @@
+extends layout
+
+block content
+  
+  h2 Welcome to #{title}
+  div(class='well')
+        table(class='table')
+            tr
+                th(rowspan='4') ALUMNADO
+                td 
+                    a(href='AlumnoCreate') Crear
+            tr
+                td 
+                    a(href='AlumnoRead') Listado
+            tr
+                td 
+                    a(href='AlumnoUpdate') Actualizar
+            tr
+                td 
+                    a(href='AlumnoDelete') Eliminar
+                
+            tr
+                th(rowspan='4') PROFESORADO
+                td 
+                    a(href='ProfesorCreate') Crear
+            tr
+                td 
+                    a(href='ProfesorRead') Listado
+            tr
+                td 
+                    a(href='ProfesorUpdate') Actualizar
+            tr
+                td 
+                    a(href='ProfesorDelete') Eliminar
+
+            tr
+                th(rowspan='4') ASIGNATURAS
+                td 
+                    a(href='AsignaturaCreate') Crear
+            tr
+                td 
+                    a(href='AsignaturaRead') Listado
+            tr
+                td 
+                    a(href='AsignaturaUpdate') Actualizar
+            tr
+                td 
+                    a(href='AsignaturaDelete') Eliminar
+
+  div(class='well')
+        table(class='table')
+            tr
+                th(rowspan='4') IMPARTICION
+                td 
+                    a(href='ImpartirCreate') Crear
+            tr
+                td 
+                    a(href='ImpartirRead') Listado
+            tr
+                td 
+                    a(href='ImpartirUpdateList') Actualizar
+            tr
+                td 
+                    a(href='ImpartirDelete') Eliminar
+            tr
+                th(rowspan='4') MATRICULAS
+                td 
+                    a(href='MatriculaCreate') Crear
+            tr
+                td 
+                    a(href='MatriculaRead') Listado
+            tr
+                td 
+                    a(href='MatriculaUpdateList') Actualizar
+            tr
+                td 
+                    a(href='MatriculaDelete') Eliminar
+                
+            
+    

@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  
+  h2 Lista de matriculas:
+  div(class='well')
+    table(class='table')
+      tr
+        th Id
+        th Nombre alumno
+        th Fecha de Inicio
+        th Fecha de Fin
+        th Asignatura
+      each matricula in matriculas
+        
+        tr
+          td #{matricula.id}
+          td #{matricula.alumno.nombre}
+          td #{matricula.alumno.apellido}
+          td #{matricula.fecha_inicio}
+          td #{matricula.fecha_fin}
+          td #{matricula.asignatura.nombre}

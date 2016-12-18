@@ -1,0 +1,13 @@
+[
+    {
+		"apellido" : "CABRERA",
+		"id" : 1,
+		"nombre" : "JACINTO",
+		"email" : "jacinto.cabrera@profesor.com"
+	}, {
+		"apellido" : "GUTIERREZ",
+		"id" : 2,
+		"nombre" : "JUANGU",
+		"email" : "juangualberto@profesor.com"
+	}
+]

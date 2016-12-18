@@ -1,0 +1,28 @@
+[
+    {
+		"apellido" : "PEREZ",
+		"id" : 1,
+		"nombre" : "PEPE",
+		"email" : "pepeperez@email.es"
+	}, {
+		"apellido" : "MARTINEZ",
+		"id" : 2,
+		"nombre" : "DANIEL",
+		"email" : "daniemartinez@email.es"
+	}, {
+		"apellido" : "GOMEZ",
+		"id" : 3,
+		"nombre" : "JUAN",
+		"email" : "juangomez@email.es"
+	}, {
+		"apellido" : "FERNANDEZ",
+		"id" : 4,
+		"nombre" : "ROCIO",
+		"email" : "rociofernandez@email"
+	}, {
+		"apellido" : "MONTORO",
+		"id" : 5,
+		"nombre" : "IGNACIO",
+		"email" : "ignaciomontoro@email.es"
+	}
+]

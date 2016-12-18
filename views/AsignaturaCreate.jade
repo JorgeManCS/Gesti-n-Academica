@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    form(method='post')
+        div(class='form-group')
+            label(for='id') id
+            input(name='id', class='form-control',type='number',required)
+        div(class='form-group')
+            label(for='nombre') Nombre:
+            input(name='nombre', class='form-control',type='text',required)
+        div(class='form-group')
+            label(for='curso') Curso:
+            input(name='curso', class='form-control',type='text',required)
+        div(class='form-group')
+            button(type='submit') Enviar

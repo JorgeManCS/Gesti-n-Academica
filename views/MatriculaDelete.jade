@@ -1,0 +1,24 @@
+extends layout
+
+block content
+
+    h2 Seleccione la Matriculación a eliminar:
+    div(class='well')
+        table(class='table')
+            tr
+                th Id
+                th Nombre
+                th Fecha de Inicio
+                th Fecha Fin
+                th Asignatura
+            each matricula in matriculas
+
+                tr
+                    td #{matricula.id}
+                    td #{matricula.alumno.nombre}
+                    td #{matricula.fecha_inicio}
+                    td #{matricula.fecha_fin}
+                    td #{matricula.asignatura.nombre}
+                    td
+                        form(method='post')
+                            Button(name ='id' value='#{matricula._id}' type='submit' class="btn-danger")  Eliminar

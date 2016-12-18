@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  
+    h2 Listado de asignaturas
+    div(class='well')
+        form(method='post')
+            table(class='table')
+                tr
+                    th no.
+                    th Nombre
+                    th Curso
+                    th Actualizar
+                each asignatura in asignaturas
+                 tr
+                    td #{asignatura.id}
+                    td #{asignatura.nombre}
+                    td #{asignatura.curso}
+                    td 
+                        Button(type="submit" name="_id" value="#{asignatura._id}" class="btn btn-primary") Actualizar
+           

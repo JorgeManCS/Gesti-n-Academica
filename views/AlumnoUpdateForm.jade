@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    form(method='post')
+        div(class='form-group')
+            label(for='id') id
+            input(value ='#{alumno.id}' name='id'  class='form-control' type='number' required)
+        div(class='form-group')
+            label(for='nombre') Nombre:
+            input(value ='#{alumno.nombre}' name='nombre'  class='form-control' type='text' required)
+        div(class='form-group')
+            label(for='apellidos') Apellidos:
+            input(value ='#{alumno.apellido}' name='apellidos'  class='form-control' type='text' required)
+        div(class='form-group')
+            label(for='email') email: 
+            input(value ='#{alumno.email}' name='email'  class='form-control' type='email' required)
+        div(class='form-group')
+            button(type='submit' name ='_id' value='#{alumno._id}') Enviar

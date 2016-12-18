@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    form(method='post')
+        div(class='form-group')
+            label(for='id') id
+            input(name='id', class='form-control',type='number',required)
+        div(class='form-group')
+            label(for='alumno') Alumno:
+            select(name='alumno', class='form-control',required)
+                each alumno in alumnos
+                    option(value='#{alumno._id}') #{alumno.nombre}
+        div(class='form-group')
+            label(for='asignatura') Asignatura:
+            select(name='asignatura', class='form-control',required)
+                each asignatura in asignaturas
+                    option(value='#{asignatura._id}') #{asignatura.nombre}
+        div(class='form-group')
+            label(for='fecha_inicio') Fecha de Inicio:
+            input(name='fecha_inicio', id='fechaInicio', class='form-control',type='text' onclick="mostrarCalendarioInicio()" required)
+        div(class='form-group')
+            label(for='fecha_fin') Fecha fin:
+            input(name='fecha_fin', id='fechaFin', class='form-control',type='text' onclick="mostrarCalendarioFin()" required)
+
+        div(class='form-group')
+            button(type='submit') Enviar

@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  
+  h2 Seleccione la asignatura a eliminar:
+  div(class='well')
+      table(class='table')
+        tr
+          th Id
+          th Nombre
+          th Curso
+        each asignatura in asignaturas
+          
+          tr
+            td #{asignatura.id}
+            td #{asignatura.nombre}
+            td #{asignatura.curso}
+            td 
+              form(method='post')
+                  Button(name ='id' value= '#{asignatura._id}' type='submit' class="btn-danger" ) Eliminar

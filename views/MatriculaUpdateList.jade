@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  
+    h2 Listado de matriculas
+    div(class='well')
+        form(method='post')
+            table(class='table')
+                tr
+                    th id
+                    th Nombre alumno
+                    th Fecha de inicio
+                    th Fecha de fin
+                    th Asignatura
+                    th Actualizar
+                each matricula in matriculas
+                 tr
+                    td #{matricula.id}
+                    td #{matricula.alumno.nombre}
+                    td #{matricula.fecha_inicio}
+                    td #{matricula.fecha_fin}
+                    td #{matricula.asignatura.nombre}
+                    td 
+                        Button(type="submit" name="_id" value="#{matricula._id}" class="btn btn-primary") Actualizar

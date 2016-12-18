@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  
+    h2 Listado de Profesores:
+    div(class='well')
+        table(class='table')
+          tr
+            th Id
+            th Nombre
+            th Apellidos
+          each profesor in profesores
+            
+            tr
+              td #{profesor.id}
+              td #{profesor.nombre}
+              td #{profesor.apellido}

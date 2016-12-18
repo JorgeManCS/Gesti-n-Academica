@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  
+  h2 Seleccione el alumno a eliminar:
+  div(class='well')
+      table(class='table')
+        tr
+          th Id
+          th Nombre
+          th Apellidos
+        each alumno in alumnos
+          
+          tr
+            td #{alumno.id}
+            td #{alumno.nombre}
+            td #{alumno.apellido}
+            td 
+              form(method='post')
+                  Button(name ='id' value= '#{alumno._id}' type='submit' class="btn-danger" ) Eliminar

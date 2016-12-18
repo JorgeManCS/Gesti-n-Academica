@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    form(method='post')
+        div(class='form-group')
+            label(for='id') id
+            input(value ='#{asignatura.id}' name='id'  class='form-control' type='number' required)
+        div(class='form-group')
+            label(for='nombre') Nombre:
+            input(value ='#{asignatura.nombre}' name='nombre'  class='form-control' type='text' required)
+        div(class='form-group')
+            label(for='curso') Curso:
+            input(value ='#{asignatura.curso}' name='curso'  class='form-control' type='text' required)
+        div(class='form-group')
+            button(type='submit' name ='_id' value='#{asignatura._id}') Enviar

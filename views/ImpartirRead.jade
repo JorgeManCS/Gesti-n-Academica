@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  
+  h2 Lista de profesores que imparten:
+  div(class='well')
+    table(class='table')
+      tr
+        th Id
+        th Profesor
+        th Horas
+        th Fecha de Inicio
+        th Fecha de Fin
+        th Asignatura
+      each impartir in imparticiones
+        
+        tr
+          td #{impartir.id}
+          td #{impartir.profesor.nombre}
+          td #{impartir.horas}
+          td #{impartir.fecha_inicio}
+          td #{impartir.fecha_fin}
+          td #{impartir.asignatura.nombre}

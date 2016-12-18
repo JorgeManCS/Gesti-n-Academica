@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  
+    h2 Listado de profesores
+    div(class='well')
+        form(method='post')
+            table(class='table')
+                tr
+                    th no.
+                    th Nombre
+                    th Apellidos
+                    th Actualizar
+                each profesor in profesores
+                 tr
+                    td #{profesor.id}
+                    td #{profesor.nombre}
+                    td #{profesor.apellido}
+                    td 
+                        Button(type="submit" name="_id" value="#{profesor._id}" class="btn btn-primary") Actualizar
+           
